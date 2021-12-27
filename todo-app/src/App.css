@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right bottom, #e1b382,#c89666);
+}
+
+.app-wrapper{
+    min-width: 450px;
+    min-height: 650px;
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: 3px 6px 40px #000;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #12343b;
+}
+
+.header h1{
+    color: #fff;
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.task-input{
+    outline: none;
+    width: 90%;
+    padding: 15px;
+    font-size: 18px;
+    color: #ccc;
+    background-color: #000000;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #c89666;
+}
+
+.button-add{
+    /* height:1rem; */
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 17.5px 11px;
+    /* font-size: 20px; */
+    cursor: pointer;
+    background-color: #f1af71;
+    border: 1px solid #c89666;
+}
+
+.list-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    /* max-height: 30px; */
+}
+
+.button-complete, .button-delete, .button-edit{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 50%;
+    font-size: 28px;
+}
+
+.button-complete{
+    color: lime;
+    margin-right: 10px;
+}
+
+.button-edit{
+    margin-right: 10px;
+    color: lightseagreen;
+}
+
+.button-delete{
+    color: red
+}
+
+.complete{
+    text-decoration-style: solid;
+    text-decoration-line: line-through;
+    opacity: 0.6;
+    text-decoration-color: lime;
+}
+
+
+.clear-btn-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.show-btn{
+    visibility: visible;
+}
+
+.hide-btn{
+    visibility:hidden;
+    z-index: -1;
+}
+
+.clearBtn{
+    background-color: #f1af71;
+    color:black;
+    font-weight: 800;
+    font-size: 20px;
+    padding:10px 15px;
+    border-radius: 10px;
+    margin: 20px auto;
+    border: none;
+}
