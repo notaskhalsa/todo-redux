@@ -25,9 +25,9 @@ const Todo = () => {
                   )
                 })}
 
-                <div className={list ? 'clear-btn-container show-btn' : 'hide-btn' }>
+                {<div className={list ? 'clear-btn-container show-btn' : 'hide-btn' }>
                   <button className='clearBtn' onClick={() => dispatch(removeTodo())}>Clear All</button>
-                </div>
+                </div>}
               </div>
             </div>
           </div>

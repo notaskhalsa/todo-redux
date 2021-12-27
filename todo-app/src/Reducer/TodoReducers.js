@@ -19,11 +19,11 @@ const todoReducers = (state = initialData, action) => {
                 ]
             }
 
-        case "DELETE_TODO":
+        case "REMOVE_TODO":
             
             const newList = state.list.filter((elem) => elem.id !== action.id)
+            
 
-            console.log(newList)
             return{
                 ...state,
                 list: newList
